@@ -22,7 +22,10 @@ nav li a {
     color: #393f4d;
 }
   
-
+ .imgbulb {
+  background-color: black;
+  color: white;
+}
   p {
     color: #feda6a;
   }
@@ -70,7 +73,7 @@ border: 2px solid #feda6a;
     color: #1d1e22;
   }
 
-  
+
   #mask {
     position:absolute;
     left:0;

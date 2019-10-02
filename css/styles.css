@@ -21,9 +21,7 @@ nav li a {
     font-size: 100%;
     color: #393f4d;
 }
-  h1 {
-    color: #1d1e22;
-  }
+  
 
   p {
     color: #feda6a;
@@ -70,4 +68,44 @@ border: 2px solid #feda6a;
   }
   footer p {
     color: #1d1e22;
+  }
+
+  
+  #mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#26262c;
+    display:none;
+  }  
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+    width:440px;
+    height:850px;
+    display:none;
+    z-index:9999;
+    padding:20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #boxes #dialog {
+    width:450px; 
+    height:auto;
+    padding: 10px 10px 10px 10px;
+    background-color:#ffffff;
+    font-size: 15pt;
+  }
+  
+  .agree:hover{
+    background-color: #D1D1D1;
+  }
+  .popupoption:hover{
+    background-color:#D1D1D1;
+    color: green;
+  }
+  .popupoption2:hover{
+    color: red;
   }

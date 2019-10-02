@@ -2,11 +2,13 @@
 <head>
     <title>Save Animals</title>
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 
-<body>
+<body onload="myFunction()">
 <header>
-<h1>Save The Animals</h1>
+<h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Save The Animals</h1>
+
 <nav>
     <ul>
     <li><a href='index.html'>Home</a></li>
@@ -19,6 +21,7 @@
     <article>
         <section class="first-section">
                 <h2>Our Friends</h2>
+                <img id="myImage" onclick="changeImage()" src="images/pic_bulboff.gif" width="100" height="180">
                 <p>Here are our friends who will provide you with help in order to find a suitable shelter, food, or treatment of any lost animal that you see</p>
         </section>
 
@@ -41,5 +44,21 @@
     
 </main>
 <footer><p>Copywrite 2019</p></footer>
+
+<script>
+    function myFunction() {
+      alert("Move the mouse at the title (Save The Animals)");
+    }
+
+
+function changeImage() {
+  var image = document.getElementById("myImage");
+  if (image.src.match("bulbon")) {
+    image.src = "images/pic_bulboff.gif";
+  } else {
+    image.src = "images/pic_bulbon.gif";
+  }
+}
+    </script>
 </body>
 </html>
